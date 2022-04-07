@@ -34,9 +34,15 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
             ],
           },
           {
-            text: '知识体系',
+            text: '知识体系roadmap',
             items: [
               { text: '地址栏输入地址后回车', link: '/pages/ba6364/' }
+            ]
+          },
+          {
+            text: '计算机网络',
+            items: [
+              {text: 'TCP的三次握手和四次挥手', link: '/pages/45041a/'}
             ]
           },
           {
@@ -59,11 +65,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         text: '更多',
         link: '/more/',
         items: [
-          { text: '学习', link: '/pages/f2a556/' },
-          { text: '面试', link: '/pages/aea6571b7a8bae86/' },
-          { text: '心情杂货', link: '/pages/2d615df9a36a98ed/' },
-          { text: '实用技巧', link: '/pages/baaa02/' },
-          { text: '友情链接', link: '/friends/' },
+          { text: '学习', link: '/pages/276c83/' },
         ],
       },
     ],
