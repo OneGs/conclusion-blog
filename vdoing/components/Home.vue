@@ -200,10 +200,9 @@ export default {
       return htmlModules ? htmlModules.homeSidebarB : ''
     },
     showBanner () { // 当分页不在第一页时隐藏banner栏
-      return this.$route.query.p
-        && this.$route.query.p != 1
-        && (!this.homeData.postList || this.homeData.postList === 'detailed')
-        ? false : true
+      return !(this.$route.query.p
+          && this.$route.query.p !== 1
+          && (!this.homeData.postList || this.homeData.postList === 'detailed'))
     },
     bannerBgStyle () {
       let bannerBg = this.homeData.bannerBg

@@ -34,29 +34,15 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
             ],
           },
           {
+            text: '知识体系',
+            items: [
+              { text: '地址栏输入地址后回车', link: '/pages/ba6364/' }
+            ]
+          },
+          {
             text: '学习笔记',
             items: [
               { text: '《JavaScript教程》', link: '/note/javascript/' },
-              { text: '《JavaScript高级程序设计》', link: '/note/js/' },
-              { text: '《ES6 教程》', link: '/note/es6/' },
-              { text: '《Vue》', link: '/note/vue/' },
-              { text: '《React》', link: '/note/react/' },
-              {
-                text: '《TypeScript 从零实现 axios》',
-                link: '/note/typescript-axios/',
-              },
-              {
-                text: '《Git》',
-                link: '/note/git/',
-              },
-              {
-                text: 'TypeScript',
-                link: '/pages/51afd6/',
-              },
-              {
-                text: 'JS设计模式总结',
-                link: '/pages/4643cd/',
-              },
             ],
           },
         ],
@@ -110,7 +96,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
     // 博主信息 (显示在首页侧边栏)
     blogger: {
-      avatar: 'https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200103123203.jpg',
+      avatar: 'https://cdn.pixabay.com/photo/2022/03/13/08/23/flowers-7065535_960_720.jpg',
       name: 'OneGs',
       slogan: '...',
     },
