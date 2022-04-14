@@ -23,33 +23,26 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     nav: [
       { text: '首页', link: '/' },
       {
-        text: '前端',
-        link: '/web/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
+        text: '路线图',
+        link: '/web/',
         items: [
-          // 说明：以下所有link的值只是在相应md文件头部定义的永久链接（不是什么特殊编码）。另外，注意结尾是有斜杠的
           {
-            text: '前端文章',
+            text: 'Roadmaps',
             items: [
-              { text: 'JavaScript', link: '/pages/8143cc480faf9a11/' },
+              { text: '地址栏输入地址后回车', link: '/pages/ba6364/' },
             ],
           },
           {
-            text: '知识体系roadmap',
+            text: 'JavaScript',
             items: [
-              { text: '地址栏输入地址后回车', link: '/pages/ba6364/' }
-            ]
-          },
-          {
-            text: '计算机网络',
-            items: [
-              {text: 'TCP的三次握手和四次挥手', link: '/pages/45041a/'}
-            ]
-          },
-          {
-            text: '学习笔记',
-            items: [
-              { text: '《JavaScript教程》', link: '/note/javascript/' },
+              { text: 'js之defer和async', link: '/pages/ea12c1/' },
             ],
+          },
+          {
+            text: 'TCP-IP',
+            items: [
+              { text: 'TCP的三次握手和四次挥手', link: '/pages/45041a/' }
+            ]
           },
         ],
       },
@@ -57,8 +50,8 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         text: '技术',
         link: '/technology/',
         items: [
-          { text: '技术文档', link: '/pages/9a7ee40fc232253e/' },
-          { text: '知识速查', link: '/pages/a1cad6/' },
+          { text: 'JavaScript常见和难点', link: '/pages/8143cc480faf9a11/' },
+          { text: '其它杂项', link: '/pages/a1cad6/' },
         ],
       },
       {
