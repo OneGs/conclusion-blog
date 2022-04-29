@@ -1,0 +1,69 @@
+@font-face {
+  font-family: "iconfont"; /* Project id  */
+  src: url('iconfont.ttf?t=1651217042992') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class*='icon-'] {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-iconfonticonfontrectangle390:before {
+  content: "\e621";
+}
+
+.icon-iconfontdown:before {
+  content: "\e60b";
+}
+
+.icon-ai-message:before {
+  content: "\e661";
+}
+
+.icon-iconfontlicai:before {
+  content: "\e62a";
+}
+
+.icon-iconcorrect:before {
+  content: "\e624";
+}
+
+.icon-wenjianjia:before {
+  content: "\e63a";
+}
+
+.icon-gongsi:before {
+  content: "\e643";
+}
+
+.icon-light:before {
+  content: "\e611";
+}
+
+.icon-bug-fill:before {
+  content: "\e8e8";
+}
+
+.icon-computer_fill:before {
+  content: "\e6eb";
+}
+
+.icon-user:before {
+  content: "\e606";
+}
+
+.icon-Star:before {
+  content: "\e636";
+}
+

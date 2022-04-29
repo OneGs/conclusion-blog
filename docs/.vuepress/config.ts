@@ -6,7 +6,6 @@ import { defineConfig4CustomTheme, UserPlugins } from 'vuepress/config'
 import { VdoingThemeConfig } from 'vuepress-theme-vdoing/types'
 // @ts-ignore
 import dayjs from 'dayjs'
-import htmlModules from './config/htmlModules' // 自定义插入的html块
 
 export default defineConfig4CustomTheme<VdoingThemeConfig>({
   theme: resolve(__dirname, '../../vdoing'), // 使用本地主题
@@ -50,7 +49,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         text: '技术',
         link: '/technology/',
         items: [
-          { text: 'JavaScript常见和难点', link: '/pages/8143cc480faf9a11/' },
+          { text: 'JavaScript', link: '/pages/8143cc480faf9a11/' },
           { text: '其它杂项', link: '/pages/a1cad6/' },
         ],
       },
@@ -136,5 +135,26 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
   // 监听文件变化并重新构建
   extraWatchFiles: [
     '.vuepress/config.ts',
-  ]
+  ],
+
+  chainWebpack: (config) => {
+    config.module
+        .rule('svg')
+        .exclude.add(resolve(__dirname, 'assets/svgs'))
+        .end()
+
+    console.log(resolve(__dirname, 'assets/svgs'))
+
+    config.module
+        .rule('icons')
+        .test(/\.svg$/)
+        .include.add(resolve(__dirname, 'assets/svgs'))
+        .end()
+        .use('svg-sprite-loader')
+        .loader('svg-sprite-loader')
+        .options({
+          symbolId: "svg-[name]",
+        })
+        .end()
+  }
 })

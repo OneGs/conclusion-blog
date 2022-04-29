@@ -2,7 +2,7 @@
   "name": "theme-vdoing-blog",
   "version": "1.0.0",
   "scripts": {
-    "dev": "vuepress dev docs",
+    "dev": "vuepress dev docs --port 9000",
     "build": "vuepress build docs",
     "deploy": "bash deploy.sh",
     "editFm": "node utils/editFrontmatter.js",
@@ -14,6 +14,7 @@
     "dayjs": "^1.9.7",
     "inquirer": "^7.1.0",
     "json2yaml": "^1.1.0",
+    "svg-sprite-loader": "^6.0.11",
     "vuepress": "1.9.5",
     "vuepress-plugin-baidu-autopush": "^1.0.1",
     "vuepress-plugin-baidu-tongji": "^1.0.1",
