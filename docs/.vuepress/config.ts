@@ -52,8 +52,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           {
             text: 'Javascript',
             items: [
-              { text: '闭包', link: '/pages/1d92c3/' },
-              {text: '事件循环', link: '/pages/b036ed/'}
+              { text: 'web图标工程化实践', link: '/pages/6cd8ec/' },
             ],
           },
           {
