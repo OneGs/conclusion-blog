@@ -49,8 +49,26 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         text: '技术',
         link: '/technology/',
         items: [
-          { text: 'JavaScript', link: '/pages/8143cc480faf9a11/' },
-          { text: '其它杂项', link: '/pages/a1cad6/' },
+          {
+            text: 'Javascript',
+            items: [
+              { text: '闭包', link: '/pages/1d92c3/' },
+              {text: '事件循环', link: '/pages/b036ed/'}
+            ],
+          },
+          {
+            text: '设计模式',
+            items: [
+              { text: '命令模式', link: '/pages/d29f17/' },
+            ],
+          },
+          {
+            text: '其它',
+            items: [
+              { text: 'Git使用手册', link: '/pages/9a7ee40fc232253e' },
+              { text: 'linux基础', link: '/pages/a1cad6/' }
+            ],
+          },
         ],
       },
       {
