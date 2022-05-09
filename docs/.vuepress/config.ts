@@ -160,8 +160,6 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         .exclude.add(resolve(__dirname, 'assets/svgs'))
         .end()
 
-    console.log(resolve(__dirname, 'assets/svgs'))
-
     config.module
         .rule('icons')
         .test(/\.svg$/)
