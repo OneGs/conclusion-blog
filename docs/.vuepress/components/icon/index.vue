@@ -15,8 +15,6 @@
 import a from '../../assets/svgs/message.svg'
 import '../../assets/svgs/alipay.svg'
 
-console.log(a, 'a')
-
 export default {
   name: "index",
 
