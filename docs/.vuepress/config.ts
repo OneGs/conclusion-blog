@@ -76,7 +76,13 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         items: [
           { text: '学习', link: '/pages/276c83/' },
           {  text: '阅读记录', link: '/pages/41e6ba/' },
-          { text: '其它', link: 'permalink: /pages/c164fe/' }
+          {
+            text: '其它',
+            items: [
+              { text: '常用网站', link: ' /pages/c164fe/' },
+              { text: '新技术', link: '/pages/c0dce2/' }
+            ],
+          },
         ],
       },
     ],
