@@ -112,7 +112,6 @@ export default {
       rootPath.setAttribute('stroke-dasharray', `${rootPath.getTotalLength() + 1}`)
       rootPath.setAttribute('stroke-dashoffset', `${rootPath.getTotalLength() + 1}`)
 
-
       const animationKeyForm = `@keyframes rangeDashOffset${id} {0% {stroke-dashoffset: ${rootPath.getTotalLength() + 1};}100% {stroke-dashoffset: 0;}}`
 
       const style = document.createElement('style');
