@@ -13,8 +13,10 @@
 
 <script>
 import SvgStrokeAction from "../../componentsLocal/SvgStrokeAction.vue";
+
 export default {
   name: "StrokeAction",
+
   components: {SvgStrokeAction}
 }
 </script>
