@@ -56,14 +56,17 @@ export default {
     },
 
     parse() {
-      const defaultSlot = this.$slots.default.at(0)
+      const defaultSlot = this.$slots.default?.at(0)
+
+      if (!defaultSlot) return
+
       const newElement = defaultSlot.elm.cloneNode()
       newElement.style.stroke = '#4fd2dd'
       newElement.setAttribute('mask', 'url(#movePoint)')
 
-      this.animationDashArray(newElement)
-
       this.$el.append(newElement)
+
+      this.animationDashArray(newElement)
     }
   }
 }
