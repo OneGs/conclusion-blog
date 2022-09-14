@@ -11,32 +11,33 @@
             d="M358.8,82.8c11.1-4.2,18.8-14.7,18.8-27.5c0-8.5-3.4-16-8.9-21.3" />
       <path fill="none" class="threeLine" stroke="#aaffaa" stroke-width="4"
             d="M124.2,105.7V77c0-11.5,9.1-13.8,17.5-13.8h10.5V44.7" />
-<!--      <polyline fill="none" class="threeLine" stroke="#aaffaa" stroke-width="4"-->
-<!--                points="147.9,40.2 171.2,63.2 175.7,63.2" />-->
-<!--      <line fill="none" class="threeLine" stroke="#aaffaa" stroke-width="4" x1="295.1" y1="32.1" x2="275.2"-->
-<!--            y2="12.2" />-->
       <path fill="none" class="threeLine" stroke="#aaffaa" stroke-width="4"
             d="M266.2,204.7V75.9c0-8.5,5.2-12.8,13.7-12.8h18.3V44.7" />
-<!--      <polyline fill="none" class="threeLine" stroke="#aaffaa" stroke-width="4"-->
-<!--                points="265.9,105.2 289.2,129.2 293.7,129.2" />-->
-<!--      <polyline fill="none" class="threeLine" stroke="#aaffaa" stroke-width="4"-->
-<!--                points="374.2,204.7 374.2,94.2 358.8,82.8 351.2,77.2" />-->
-<!--      <polyline fill="none" class="threeLine" stroke="#aaffaa" stroke-width="4"-->
-<!--                points="148.2,237.2 171.2,261.2 294.6,261.2 300.5,261.2 402.2,261.2 402.2,228.2 379.2,204.2" />-->
-<!--      <polyline fill="none" class="threeLine" stroke="#aaffaa" stroke-width="4"-->
-<!--                points="124.2,204.7 124.2,157.2 175.7,157.2" />-->
-<!--      <line fill="none" class="threeLine" stroke="#aaffaa" stroke-width="4" x1="147.7" y1="228.2" x2="129.2"-->
-<!--            y2="204.2" />-->
-<!--      <polyline fill="none" class="threeLine" stroke="#aaffaa" stroke-width="4"-->
-<!--                points="7.2,237.3 30.2,261.2 152.2,261.2 152.2,241.7" />-->
-<!--      <polyline fill="none" class="threeLine" stroke="#aaffaa" stroke-width="4"-->
-<!--                points="1.9,40.2 26,63.2 39.7,63.2" />-->
-<!--      <line fill="none" class="threeLine" stroke="#aaffaa" stroke-width="4" x1="129.2" y1="12.2" x2="148.2"-->
-<!--            y2="33.2" />-->
-<!--      <line fill="none" class="threeLine" stroke="#aaffaa" stroke-width="4" x1="303.9" y1="53" x2="328.1"-->
-<!--            y2="77.2" />-->
-<!--      <line fill="none" class="threeLine" stroke="#aaffaa" stroke-width="4" x1="345.1" y1="10.5" x2="368.7"-->
-<!--            y2="34" />-->
+
+      <polyline fill="none" class="threeLine" stroke="#aaffaa" stroke-width="4"
+                points="147.9,40.2 171.2,63.2 175.7,63.2" />
+      <line fill="none" class="threeLine" stroke="#aaffaa" stroke-width="4" x1="295.1" y1="32.1" x2="275.2"
+            y2="12.2" />
+      <polyline fill="none" class="threeLine" stroke="#aaffaa" stroke-width="4"
+                points="265.9,105.2 289.2,129.2 293.7,129.2" />
+      <polyline fill="none" class="threeLine" stroke="#aaffaa" stroke-width="4"
+                points="374.2,204.7 374.2,94.2 358.8,82.8 351.2,77.2" />
+      <polyline fill="none" class="threeLine" stroke="#aaffaa" stroke-width="4"
+                points="148.2,237.2 171.2,261.2 294.6,261.2 300.5,261.2 402.2,261.2 402.2,228.2 379.2,204.2" />
+      <polyline fill="none" class="threeLine" stroke="#aaffaa" stroke-width="4"
+                points="124.2,204.7 124.2,157.2 175.7,157.2" />
+      <line fill="none" class="threeLine" stroke="#aaffaa" stroke-width="4" x1="147.7" y1="228.2" x2="129.2"
+            y2="204.2" />
+      <polyline fill="none" class="threeLine" stroke="#aaffaa" stroke-width="4"
+                points="7.2,237.3 30.2,261.2 152.2,261.2 152.2,241.7" />
+      <polyline fill="none" class="threeLine" stroke="#aaffaa" stroke-width="4"
+                points="1.9,40.2 26,63.2 39.7,63.2" />
+      <line fill="none" class="threeLine" stroke="#aaffaa" stroke-width="4" x1="129.2" y1="12.2" x2="148.2"
+            y2="33.2" />
+      <line fill="none" class="threeLine" stroke="#aaffaa" stroke-width="4" x1="303.9" y1="53" x2="328.1"
+            y2="77.2" />
+      <line fill="none" class="threeLine" stroke="#aaffaa" stroke-width="4" x1="345.1" y1="10.5" x2="368.7"
+            y2="34" />
 
       <!-- there -->
       <path class="there" fill="none" stroke="#aaffaa" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"
@@ -59,6 +60,7 @@ export default {
     const hiO = this.$el.querySelector('.hi-o');
     const hi = this.$el.querySelector('.hi');
     const there = this.$el.querySelectorAll('.there');
+    const threeLine = this.$el.querySelectorAll('.threeLine')
 
     this.animationDashArray(hiO, .6)
 
@@ -70,6 +72,10 @@ export default {
       Array.from(there).forEach((ele, index) => {
         this.animationDashArray(ele, 2)
       })
+
+      Array.from(threeLine).forEach(ele => {
+        this.animationDashArray(ele, 2)
+      })
     })
 
     there[0].addEventListener('animationend', () => {
@@ -79,12 +85,8 @@ export default {
   },
 
   methods: {
-    transitionend() {
-      console.log('test')
-    },
-
     offsetAllElement() {
-      Array.from(this.$el.querySelectorAll('path')).forEach(ele => {
+      Array.from(this.$el.querySelectorAll('path, line, polyline')).forEach(ele => {
         ele.setAttribute('style', '')
         ele.setAttribute('stroke-dasharray', `${ele.getTotalLength() + 1}`)
         ele.setAttribute('stroke-dashoffset', `${ele.getTotalLength() + 1}`)
