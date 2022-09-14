@@ -102,7 +102,7 @@ export default {
 
       document.head.append(style)
 
-      rootPath.style.animation = `rangeDash${id} ${time}s linear forwards`
+      rootPath.style.animation = `rangeDash${id} ${time}s ease-out forwards`
     },
   }
 }
