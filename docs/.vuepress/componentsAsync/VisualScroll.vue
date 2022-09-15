@@ -45,7 +45,7 @@ function scrollbarWidth() {
   scrollBarWidth = widthNoScroll - widthWithScroll;
 
   return scrollBarWidth;
-};
+}
 
 function renderThumbStyle({move, size, bar}) {
   const style = {};
@@ -57,7 +57,7 @@ function renderThumbStyle({move, size, bar}) {
   style.webkitTransform = translate;
 
   return style;
-};
+}
 
 export default {
   name: "VisualScroll",

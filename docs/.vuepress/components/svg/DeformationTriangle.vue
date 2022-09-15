@@ -1,7 +1,19 @@
 <template>
   <div style="text-align: center">
-    <svg xmlns="http://www.w3.org/2000/svg" class="stroke-action" width="300px" height="300px">
-      <path d="M30,100 L100,250 L150,200 Z" class="triangle" stroke="#aaffaa" fill="none" stroke-linecap="round" stroke-width="6px" />
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="stroke-action"
+      width="300px"
+      height="300px"
+    >
+      <path
+        d="M30,100 L100,250 L150,200 Z"
+        class="triangle"
+        stroke="#aaffaa"
+        fill="none"
+        stroke-linecap="round"
+        stroke-width="6px"
+      />
     </svg>
   </div>
 </template>

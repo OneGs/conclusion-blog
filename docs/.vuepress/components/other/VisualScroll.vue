@@ -1,5 +1,8 @@
 <template>
-  <component v-if="dynamicComponent" :is="dynamicComponent" />
+  <component
+    :is="dynamicComponent"
+    v-if="dynamicComponent"
+  />
 </template>
 
 <script>

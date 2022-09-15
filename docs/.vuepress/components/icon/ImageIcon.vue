@@ -1,5 +1,5 @@
 <template>
-  <div class="icon icon-structure"/>
+  <div class="icon icon-structure" />
 </template>
 
 <script>

@@ -260,7 +260,7 @@ export default {
       })
     }
   },
-  beforeDestroy () {
+  beforeUnmount () {
     clearTimeout(this.playTimer)
     this.slide && this.slide.destroy()
   },

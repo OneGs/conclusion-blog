@@ -1,22 +1,24 @@
 <template>
   <div>
-    <span v-if="isIcon" :class="[icon]"/>
+    <span
+      v-if="isIcon"
+      :class="[icon]"
+    />
     <svg
-        v-else
-        class="svg-icon"
-        aria-hidden="true"
+      v-else
+      class="svg-icon"
+      aria-hidden="true"
     >
-    <use :xlink:href="`#${icon}`" />
+      <use :xlink:href="`#${icon}`" />
     </svg>
   </div>
 </template>
 
 <script>
-import a from '../../assets/svgs/message.svg'
 import '../../assets/svgs/alipay.svg'
 
 export default {
-  name: "index",
+  name: "IndexIcon",
 
   props: {
     icon: {

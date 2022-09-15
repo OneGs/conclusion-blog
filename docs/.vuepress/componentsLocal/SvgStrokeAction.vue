@@ -1,18 +1,48 @@
 <template>
-  <svg xmlns="http://www.w3.org/2000/svg" class="stroke-action"  :viewBox="viewBox">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    class="stroke-action"
+    :viewBox="viewBox"
+  >
     <defs>
       <filter id="gaussianBlurFilter">
-        <feGaussianBlur in="SourceGraphic" result="gaussianBlur" stdDeviation="20" />
+        <feGaussianBlur
+          in="SourceGraphic"
+          result="gaussianBlur"
+          stdDeviation="20"
+        />
       </filter>
 
-      <radialGradient id="gradient" cx="50%" cy="50%" r="50%">
-        <stop offset="0%" stop-color="#fff" stop-opacity="1" />
-        <stop offset="100%" stop-color="#fff" stop-opacity="0" />
+      <radialGradient
+        id="gradient"
+        cx="50%"
+        cy="50%"
+        r="50%"
+      >
+        <stop
+          offset="0%"
+          stop-color="#fff"
+          stop-opacity="1"
+        />
+        <stop
+          offset="100%"
+          stop-color="#fff"
+          stop-opacity="0"
+        />
       </radialGradient>
 
       <mask id="movePoint">
-        <circle cx="0" cy="0" r="80" fill="url(#gradient)">
-          <animateMotion path="M0,0 L60,10 L100,100 L150,150 L200,230 L230,100 L250,50 L280,120 L300,0" dur="4s" repeatCount="indefinite"></animateMotion>
+        <circle
+          cx="0"
+          cy="0"
+          r="80"
+          fill="url(#gradient)"
+        >
+          <animateMotion
+            path="M0,0 L60,10 L100,100 L150,150 L200,230 L230,100 L250,50 L280,120 L300,0"
+            dur="4s"
+            repeatCount="indefinite"
+          />
         </circle>
       </mask>
     </defs>
