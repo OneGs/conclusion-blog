@@ -4,6 +4,7 @@
 import { resolve } from 'path'
 import { defineConfig4CustomTheme, UserPlugins } from 'vuepress/config'
 import { VdoingThemeConfig } from 'vuepress-theme-vdoing/types'
+
 // @ts-ignore
 import dayjs from 'dayjs'
 
@@ -21,30 +22,6 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
   themeConfig: {
     nav: [
       { text: '首页', link: '/' },
-      {
-        text: '路线图',
-        link: '/web/',
-        items: [
-          {
-            text: 'Roadmaps',
-            items: [
-              { text: '地址栏输入地址后回车', link: '/pages/ba6364/' },
-            ],
-          },
-          {
-            text: 'JavaScript',
-            items: [
-              { text: 'js之defer和async', link: '/pages/ea12c1/' },
-            ],
-          },
-          {
-            text: 'TCP-IP',
-            items: [
-              { text: 'TCP的三次握手和四次挥手', link: '/pages/45041a/' }
-            ]
-          },
-        ],
-      },
       {
         text: '技术',
         link: '/technology/',
@@ -95,12 +72,10 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     editLinkText: '编辑',
     archive: false, // 是否打开归档功能，默认true
     bodyBgImg: [
-      'https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200507175828.jpeg',
-      'https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200507175845.jpeg',
-      'https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200507175846.jpeg'
+      '/img/bg-one.png',
     ], // body背景大图，默认无。 单张图片 String | 多张图片 Array, 多张图片时每隔15秒换一张。
     bodyBgImgOpacity: 0.5, // body背景图透明度，选值 0.1~ 1.0, 默认0.5
-    titleBadge: false, // 文章标题前的图标是否显示，默认true
+    titleBadge: true, // 文章标题前的图标是否显示，默认true
     contentBgStyle: 5, // 文章内容块的背景风格，默认无. 1 方格 | 2 横线 | 3 竖线 | 4 左斜线 | 5 右斜线 | 6 点状
 
     // 侧边栏  'structuring' | { mode: 'structuring', collapsable: Boolean} | 'auto' | <自定义>    温馨提示：目录页数据依赖于结构化的侧边栏数据，如果你不设置为'structuring',将无法使用目录页
