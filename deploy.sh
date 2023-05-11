@@ -1,9 +1,9 @@
-git pull origin master
+# git pull origin master
 
 yarn build
 
-rm -rf /var/www/175.178.221.4/html/*
+rm -rf /var/www/blog/*
 
-mv docs/.vuepress/dist/* /var/www/175.178.221.4/html
+mv docs/.vuepress/dist/* /var/www/blog
 
 echo "deploy complete success"
